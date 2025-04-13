@@ -2,7 +2,7 @@
 
 > 一个演示如何在离线环境中使用 Docsify 的示例项目
 
-[English](../README.md)|简体中文
+[English](../README.md) | 简体中文
 
 ## 项目介绍
 

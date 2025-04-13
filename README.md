@@ -2,7 +2,7 @@
 
 > An example project demonstrating how to use Docsify in offline environments
 
-English|[简体中文](zh-cn/README.md)
+English | [简体中文](zh-cn/README.md)
 
 ## Project Introduction
 
