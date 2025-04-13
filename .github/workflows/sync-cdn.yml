@@ -14,12 +14,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: latest
-          cache: "npm"
-
       - name: Create assets directories
         run: |
           # Create directories if they don't exist
