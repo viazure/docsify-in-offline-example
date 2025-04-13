@@ -1,0 +1,1 @@
+docsify-auto-sidebar -d .

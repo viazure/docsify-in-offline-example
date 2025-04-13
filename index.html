@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Docsify In Offline Example</title>
+  <link rel="icon" href="/favicon.svg" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="assets/css/vue.css">
+  <link rel="stylesheet" href="assets/css/style.min.css" title="docsify-darklight-theme" type="text/css" />
+  <style>
+    nav.app-nav li ul {
+      min-width: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">Loading ...</div>
+  <script>
+    // 设置 html 的 lang 属性（Set html "lang" attribute based on URL）
+    var lang = location.hash.match(/#\/(zh-cn)\//);
+
+    if (lang) {
+      document.documentElement.setAttribute('lang', lang[1]);
+    }
+
+    // Docsify 配置（Docsify configuration）
+    window.$docsify = {
+      alias: {
+        '/.*/_navbar.md': '/_navbar.md',
+        '/docs/(.*)': './docs/$1',
+        '/zh-cn/docs/(.*)': './zh-cn/docs/$1',
+        '/zh-cn/(.*)': './zh-cn/$1',
+      },
+      auto2top: true, // 导航后自动滚动到顶部
+      loadSidebar: true, // 加载侧边栏
+      loadNavbar: true, // 加载导航栏
+      mergeNavbar: true, // 合并导航栏
+      maxLevel: 3, // 最大标题层级
+      subMaxLevel: 2, // 最大子标题层级
+      name: 'Docsify In Offline Example', // 文档名称
+      nameLink: {
+        '/zh-cn/': '#/zh-cn/',
+        '/': '#/',
+      },
+      repo: 'https://github.com/viazure/docsify-offline-example', // 仓库地址
+      sidebarDisplayLevel: 2, // 侧边栏显示层级
+      search: {
+        depth: 4, // 搜索深度
+        maxAge: 300000, // 缓存过期时间（毫秒）
+        noData: { // 无结果提示
+          '/zh-cn/': '没有结果！',
+          '/': 'No results!',
+        },
+        paths: 'auto', // 搜索路径
+        placeholder: { // 搜索框占位符
+          '/zh-cn/': '搜索',
+          '/': 'Search',
+        },
+        pathNamespaces: ['/zh-cn'],
+      },
+      timeUpdater: {
+        text: "<div align='left' width='200px' style='color:gray;font-size:16px'>{docsify-updated}</div>",
+        formatUpdated: "{YYYY}-{MM}-{DD} {HH}:{mm}:{ss}",
+        whereToPlace: "bottom",
+      },
+      copyCode: {
+        buttonText: 'Copy', // 复制按钮文本
+        errorText: 'Failed', // 复制失败提示
+        successText: 'Copied', // 复制成功提示
+      },
+      loadNavbar: true, // 加载导航栏
+      loadFooter: true, // 加载页脚
+    }
+  </script>
+  <!-- Docsify 核心 -->
+  <script src="assets/js/docsify.min.js"></script>
+  <!-- 深色/浅色主题切换 -->
+  <script src="assets/js/darklight.min.js"></script>
+  <!-- 复制代码到剪贴板 -->
+  <script src="assets/js/docsify-copy-code.min.js"></script>
+  <!-- 脚注 -->
+  <script src="assets/js/docsify-footnotes.min.js"></script>
+  <!-- 提示框 -->
+  <script src="assets/js/docsify-plugin-flexible-alerts.min.js"></script>
+  <!-- 可折叠侧边栏 -->
+  <script src="assets/js/docsify-sidebar-collapse.min.js"></script>
+  <!-- 中英文自动空格 -->
+  <script src="assets/js/pangu.min.js"></script>
+  <!-- 代码高亮 -->
+  <script src="assets/js/prism-markdown.min.js"></script>
+  <script src="assets/js/prism-bash.min.js"></script>
+  <script src="assets/js/prism-json.min.js"></script>
+  <!-- 全文搜索 -->
+  <script src="assets/js/search.min.js"></script>
+  <!-- 文件更新时间 -->
+  <script src="assets/js/time-updater.min.js"></script>
+  <!-- 图片缩放 -->
+  <script src="assets/js/zoom-image.min.js"></script>
+</body>
+
+</html>
