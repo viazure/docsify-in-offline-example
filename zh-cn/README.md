@@ -8,11 +8,11 @@
 
 这是一个演示如何在无互联网环境下使用 Docsify 的示例项目。
 
-源起与部署说明见博客《[使用 docsify 在离线环境中部署文档服务](https://viazure.cc/posts/development/deploying-docsify-in-offline-environment/)》。
+源起与部署说明见博客文章《[使用 docsify 在离线环境中部署文档服务](https://viazure.cc/posts/development/deploying-docsify-in-offline-environment/)》。
 
 ## 功能特性
 
-本项目集成了以下实用功能和插件：
+本项目集成了以下实用功能和插件，并定期同步最新的资源文件。
 
 - 中英文双语支持
 - [深色/浅色主题切换](https://github.com/boopathikumar018/docsify-darklight-theme)
@@ -24,7 +24,7 @@
 - [提示框](https://github.com/fzankl/docsify-plugin-flexible-alerts)
 - [文件更新时间显示](https://github.com/fzankl/docsify-plugin-flexible-alerts)
 - [可折叠侧边栏](https://github.com/iPeng6/docsify-sidebar-collapse)
-- [图片缩放](https://kingdido999.github.io/zooming/docs/#/)
+- [图片缩放](https://kingdido999.github.io/zooming/docs)
 
 ## 部分目录与文件说明
 

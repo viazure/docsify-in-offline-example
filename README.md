@@ -12,7 +12,7 @@ For the origin and deployment instructions, please refer to the blog post: [Depl
 
 ## Features
 
-This project integrates the following useful features and plugins:
+This project incorporates the following practical functions and plugins, and synchronizes the latest resource files on a regular basis.
 
 - Bilingual support (Chinese/English)
 - [Dark/Light theme switching](https://github.com/boopathikumar018/docsify-darklight-theme)

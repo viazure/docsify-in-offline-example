@@ -36,8 +36,14 @@
         '/zh-cn/(.*)': './zh-cn/$1',
       },
       auto2top: true, // 导航后自动滚动到顶部
+      copyCode: {
+        buttonText: 'Copy', // 复制按钮文本
+        errorText: 'Failed', // 复制失败提示
+        successText: 'Copied', // 复制成功提示
+      },
       loadSidebar: true, // 加载侧边栏
       loadNavbar: true, // 加载导航栏
+      loadFooter: true, // 加载页脚
       mergeNavbar: true, // 合并导航栏
       maxLevel: 3, // 最大标题层级
       subMaxLevel: 2, // 最大子标题层级
@@ -67,13 +73,6 @@
         formatUpdated: "{YYYY}-{MM}-{DD} {HH}:{mm}:{ss}",
         whereToPlace: "bottom",
       },
-      copyCode: {
-        buttonText: 'Copy', // 复制按钮文本
-        errorText: 'Failed', // 复制失败提示
-        successText: 'Copied', // 复制成功提示
-      },
-      loadNavbar: true, // 加载导航栏
-      loadFooter: true, // 加载页脚
     }
   </script>
   <!-- Docsify 核心 -->
@@ -86,7 +85,7 @@
   <script src="assets/js/docsify-footnotes.min.js"></script>
   <!-- 提示框 -->
   <script src="assets/js/docsify-plugin-flexible-alerts.min.js"></script>
-  <!-- 可折叠侧边栏 -->
+   <!-- 可折叠侧边栏 -->
   <script src="assets/js/docsify-sidebar-collapse.min.js"></script>
   <!-- 中英文自动空格 -->
   <script src="assets/js/pangu.min.js"></script>
