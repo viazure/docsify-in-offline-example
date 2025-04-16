@@ -26,6 +26,12 @@
 - [可折叠侧边栏](https://github.com/iPeng6/docsify-sidebar-collapse)
 - [图片缩放](https://kingdido999.github.io/zooming/docs)
 
+## 部署说明
+
+本项目可作为静态网站直接部署。IIS 需要添加 markdown 文件的 MIME 类型：`text/markdown`。
+
+更多详细的部署说明，请参考 [Docsify 官方部署指南](https://docsify.js.org/#/zh-cn/deploy)。
+
 ## 部分目录与文件说明
 
 ```bash

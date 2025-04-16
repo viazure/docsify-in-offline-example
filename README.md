@@ -26,6 +26,12 @@ This project incorporates the following practical functions and plugins, and syn
 - [Collapsible sidebar](https://github.com/iPeng6/docsify-sidebar-collapse)
 - [Image zooming](https://kingdido999.github.io/zooming/docs/#/)
 
+## Deployment
+
+This project can be deployed as a static website. IIS requires adding MIME type for markdown files: `text/markdown`.
+
+For more detailed deployment instructions, please refer to the [official Docsify deployment guide](https://docsify.js.org/#/deploy).
+
 ## Partial Directory and File Structure
 
 ```bash
